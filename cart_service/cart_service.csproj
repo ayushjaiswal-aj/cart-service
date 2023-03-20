@@ -7,4 +7,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Feature\" />
+    <None Remove="Feature\Cart\" />
+    <None Remove="Feature\Cart\Domain\" />
+    <None Remove="Feature\Cart\Domain\Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Feature\" />
+    <Folder Include="Feature\Cart\" />
+    <Folder Include="Feature\Cart\Domain\" />
+    <Folder Include="Feature\Cart\Domain\Services\" />
+  </ItemGroup>
 </Project>

@@ -1,4 +1,6 @@
-﻿namespace cart_service.tests;
+﻿using cart_service;
+
+namespace cart_service.tests;
 
 public class Tests
 {
