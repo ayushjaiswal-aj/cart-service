@@ -15,12 +15,12 @@ namespace cart_service.tests.Feature.Cart.Domain.Services
 		}
 
 		[Test]
-		public void IncreaseQuantity_NumberIs1_IncreaseTheQuantityBy1()
+		public void AddItem_QuantityIs1_AddsItemWithQuantity1()
 		{
 			Product cornflex = new Product("cornflex", 2);
 			Item item = new Item(cornflex, 1);
 
-			_itemService.increaseQuantity(item, 1);
+			_itemService.AddItem(item, 1);
 
 			Assert.That(item.quantity, Is.EqualTo(2));
 		}
